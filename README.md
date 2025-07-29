@@ -2,17 +2,7 @@
 
 A Vue.js application for the Autumn Moon festival website.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+**Live Site:** [https://alanttran.github.io/autumnmoon/](https://alanttran.github.io/autumnmoon/)
 
 ## Project Setup
 
@@ -38,37 +28,14 @@ npm run build
 npm run lint
 ```
 
-## Deployment
-
-This project is configured for GitHub Pages deployment using GitHub Actions.
-
-### Live Site
-
-The live site is available at: [https://alanttran.github.io/autumnmoon/](https://alanttran.github.io/autumnmoon/)
-
-### Manual Deployment
-
-To deploy manually:
+## Git Workflow
 
 ```sh
-npm run deploy
+git add .
+git commit -m "Your commit message here"
+git push origin main
 ```
 
-### Automatic Deployment
+## Customize configuration
 
-The project includes a GitHub Actions workflow that automatically deploys to GitHub Pages when changes are pushed to the main branch.
-
-To enable automatic deployment:
-
-1. Go to your repository settings on GitHub
-2. Navigate to "Pages" in the sidebar
-3. Under "Source", select "GitHub Actions"
-4. The workflow will automatically deploy when you push to the main branch
-
-The site will be available at: [https://alanttran.github.io/autumnmoon/](https://alanttran.github.io/autumnmoon/)
-
-### How it works
-
-- The GitHub Actions workflow builds the project and uploads the `dist` folder as an artifact
-- GitHub Pages serves the contents of this artifact
-- No `gh-pages` branch is created - deployment is handled through GitHub's Pages system
+See [Vite Configuration Reference](https://vite.dev/config/).

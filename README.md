@@ -40,7 +40,7 @@ npm run lint
 
 ## Deployment
 
-This project is configured for GitHub Pages deployment.
+This project is configured for GitHub Pages deployment using GitHub Actions.
 
 ### Live Site
 
@@ -62,8 +62,13 @@ To enable automatic deployment:
 
 1. Go to your repository settings on GitHub
 2. Navigate to "Pages" in the sidebar
-3. Under "Source", select "Deploy from a branch"
-4. Choose the "gh-pages" branch and "/ (root)" folder
-5. Click "Save"
+3. Under "Source", select "GitHub Actions"
+4. The workflow will automatically deploy when you push to the main branch
 
 The site will be available at: [https://alanttran.github.io/autumnmoon/](https://alanttran.github.io/autumnmoon/)
+
+### How it works
+
+- The GitHub Actions workflow builds the project and uploads the `dist` folder as an artifact
+- GitHub Pages serves the contents of this artifact
+- No `gh-pages` branch is created - deployment is handled through GitHub's Pages system

@@ -42,6 +42,10 @@ npm run lint
 
 This project is configured for GitHub Pages deployment.
 
+### Live Site
+
+The live site is available at: [https://alanttran.github.io/autumnmoon/](https://alanttran.github.io/autumnmoon/)
+
 ### Manual Deployment
 
 To deploy manually:
@@ -62,4 +66,4 @@ To enable automatic deployment:
 4. Choose the "gh-pages" branch and "/ (root)" folder
 5. Click "Save"
 
-The site will be available at: `https://[your-username].github.io/autumnmoon/`
+The site will be available at: [https://alanttran.github.io/autumnmoon/](https://alanttran.github.io/autumnmoon/)

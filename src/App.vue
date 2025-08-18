@@ -10,13 +10,31 @@ import MoonRabbit from './components/MoonRabbit.vue'
         <img src="./assets/rabbit.png" alt="Autumn Moon" class="logo" />
 
         <nav class="nav">
-          <RouterLink to="/" class="nav__link">Home</RouterLink>
-          <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
-          <RouterLink to="/schedule" class="nav__link">Schedule</RouterLink>
-          <RouterLink to="/vendors" class="nav__link">Vendors</RouterLink>
-          <RouterLink to="/volunteers" class="nav__link">Volunteers</RouterLink>
-          <RouterLink to="/sponsors" class="nav__link">Sponsors</RouterLink>
-          <RouterLink to="/donate" class="nav__link">Donate</RouterLink>
+          <RouterLink to="/" class="nav__link">HOME</RouterLink>
+          <RouterLink to="/donate" class="nav__link">DONATIONS</RouterLink>
+          <RouterLink to="/contact-us" class="nav__link">CONTACT US</RouterLink>
+          <div class="nav__dropdown">
+            <RouterLink to="/learn-more" class="nav__link">LEARN MORE ˅</RouterLink>
+            <div class="nav__dropdown-content">
+              <!-- todo -->
+            </div>
+          </div>
+          <div class="nav__dropdown">
+            <button class="nav__link">VISITOR INFO ˅</button>
+            <div class="nav__dropdown-content">
+              <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
+              <RouterLink to="/schedule" class="nav__link">Schedule</RouterLink>
+              <RouterLink to="/vendors" class="nav__link">Vendors</RouterLink>
+            </div>
+          </div>
+          <div class="nav__dropdown">
+            <button class="nav__link">JOIN THE FESTIVAL ˅</button>
+            <div class="nav__dropdown-content">
+              <RouterLink to="/volunteers" class="nav__link">Volunteers</RouterLink>
+              <RouterLink to="/sponsors" class="nav__link">Sponsors</RouterLink>
+            </div>
+          </div>
+          
         </nav>
       </div>
     </header>
@@ -39,55 +57,58 @@ import MoonRabbit from './components/MoonRabbit.vue'
 }
 
 .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1C1C1C;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .header__content {
-  max-width: 1200px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
 }
 
 .logo {
   height: 50px;
   width: auto;
-  margin: 0;
+  margin: 0 4rem;
 }
 
 .nav {
   display: flex;
-  gap: 0;
+  gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Lato', sans-serif;
 }
 
 .nav__link {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 0.75rem;
   text-decoration: none;
-  color: #666;
+  color: #F5E8D8;
   font-weight: 500;
   transition: all 0.3s ease;
   border-radius: 6px;
   margin: 0 0.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
 }
 
 .nav__link:hover {
-  color: #007bff;
-  background-color: #f8f9fa;
+  color: #D0171F;
 }
 
 .nav__link.router-link-active,
 .nav__link.router-link-exact-active {
-  color: #007bff;
-  background-color: #e3f2fd;
+  color: #D0171F;
 }
 
 .main {
@@ -112,5 +133,29 @@ import MoonRabbit from './components/MoonRabbit.vue'
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+}
+
+.nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav__dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 10;
+  margin-top: 0.5rem;
+}
+
+.nav__dropdown:hover .nav__dropdown-content,
+.nav__dropdown:focus-within .nav__dropdown-content {
+  display: flex;
 }
 </style>

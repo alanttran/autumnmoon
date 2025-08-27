@@ -6,52 +6,53 @@
   <div class="home">
     <header class="hero">
       <div class="hero-content">
-        <h1>Welcome to Autumn Moon</h1>
-        <p>Shaping the future through education and innovation</p>
-        <button class="cta-button">Learn More</button>
+        <h1>2025 SAN DIEGO AUTUMN MOON FESTIVAL</h1>
+          <h3>date time location</h3>
+          <div class="hero-nav">
+            <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
+            <RouterLink to="/vendors" class="nav__link">Be a Part of the Festival</RouterLink>
+          </div>
+        
       </div>
     </header>
 
     <main>
-      <section class="features">
-        <h2>Why Choose Autumn Moon?</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">🎓</div>
-            <h3>Academic Excellence</h3>
-            <p>Comprehensive curriculum designed for success</p>
+      <section class="mission"> 
+        <div class="mission-container">
+          <div class="mission-content">
+            <h2>MISSION STATEMENT</h2>
+            <p>Our mission is to celebrate the diversity of the Autumn Moon<br>
+               Festival by creating a space where communities can share their<br>
+               traditions while learning about other cultures. We aim to educate<br>
+               others, spread awareness, and build curiosity through our event.</p>
+            <RouterLink to="/learn-more" class="learn-more__link">Learn More About the Different Festivals ➔</RouterLink>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔬</div>
-            <h3>Research Focus</h3>
-            <p>Cutting-edge research opportunities</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🌍</div>
-            <h3>Global Perspective</h3>
-            <p>International partnerships and programs</p>
-          </div>
+          <img src="@/assets/amf-poster.png" alt="AMF Poster" width="536" height="auto"/>
         </div>
+        
       </section>
 
-      <section class="news">
-        <h2>Latest News</h2>
-        <div class="news-grid">
-          <article class="news-card">
-            <div class="news-image"></div>
-            <h3>New Research Grant Awarded</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </article>
-          <article class="news-card">
-            <div class="news-image"></div>
-            <h3>Student Achievement Recognition</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </article>
-          <article class="news-card">
-            <div class="news-image"></div>
-            <h3>Campus Expansion Plans</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </article>
+      <section class="gallery">
+        <div class="gallery-container">
+          <div class="gallery-title">
+            <h2>GALLERY</h2>
+            <p>Check out the photos of last year’s festival!</p>
+          </div>
+          <div class="gallery-photos">
+            <div class="photo-column">
+              <img src="@/assets/home-gallery/home-1.png" alt="gallery photo 1"  style="width:362px; height:362px; object-fit:cover;"/>
+              <img src="@/assets/home-gallery/home-2.jpg" alt="gallery photo 2" style="width:362px; height:362px; object-fit:cover;">
+            </div>
+            <div class="photo-column">
+              <img src="@/assets/home-gallery/home-7.png" alt="gallery photo 7" style="width:362px; height:203.62px; object-fit:cover;"/>
+              <img src="@/assets/home-gallery/home-4.jpg" alt="gallery photo 4" style="width:362px; height:203.62px; object-fit:cover;">
+              <img src="@/assets/home-gallery/home-3.png" alt="gallery photo 3" style="width:362px; height:362px; object-fit:cover;">
+            </div>
+            <div class="photo-column">
+              <img src="@/assets/home-gallery/home-5.jpg" alt="gallery photo 5"  style="width:362px; height:362px; object-fit:cover;"/>
+              <img src="@/assets/home-gallery/home-6.jpg" alt="gallery photo 6" style="width:362px; height:362px; object-fit:cover;">
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -64,109 +65,156 @@
 }
 
 .hero {
-  background: #f5f5f5;
-  padding: 4rem 2rem;
+  position: relative;
+  background: url('@/assets/homepage-hero.png') no-repeat;
+  background-size: cover;
+  background-position: right 80%;
+  width: 100%;
+  height: 100%;
+  padding: 120px 64px;
+
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* dims background */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #333;
+  font-size: 6.75rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: #F5E8D8;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #666;
+.hero-content h3 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #F5E8D8;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
-.cta-button {
-  background: #007bff;
-  color: white;
+.hero-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav__link {
+  background: #F5E8D8;
+  color: #111111;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   cursor: pointer;
 }
 
-main {
-  padding: 2rem;
+.nav__link:hover {
+  background: #DAA520;
+  transition: color 1s, background 1s, border 1s;
 }
 
-.features {
-  margin-bottom: 4rem;
+.mission {
+  padding: 112px 64px;
+  width: 100%;
+  max-width: 100vw;
 }
 
-.features h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #333;
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.feature-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.feature-icon {
+.mission h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #F5E8D8;
+  margin-bottom: 16px;;
 }
 
-.feature-card h3 {
-  margin-bottom: 1rem;
-  color: #333;
+.mission p {
+  font-size: 1.125rem;
+  font-family: 'Lato', sans-serif;
+  color: #F5E8D8;
+  margin-bottom: 24px;
 }
 
-.feature-card p {
-  color: #666;
+.learn-more__link {
+  background: none;
+  color: #F5E8D8;
+  border: none;
+  font-size: 1.25rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.news h2 {
+.learn-more__link:hover {
+  color: #C11010;
+  transition: background 1s;
+}
+
+.gallery {
+  padding: 112px 64px;
+  gap: 80px;
+}
+
+.gallery-title {
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #333;
+  gap: 16px;
 }
 
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.gallery h2 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #F5E8D8;
+  margin-bottom: 16px;;
 }
 
-.news-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.gallery p {
+  font-size: 1.125rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #F5E8D8;
+  margin-bottom: 80px;;
 }
 
-.news-image {
-  height: 200px;
-  background: #e0e0e0;
+.gallery-photos {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }
 
-.news-card h3 {
-  padding: 1rem;
-  margin: 0;
-  color: #333;
-}
-
-.news-card p {
-  padding: 0 1rem 1rem;
-  color: #666;
-}
+.photo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+} 
 </style>

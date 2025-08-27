@@ -44,11 +44,11 @@ const router = createRouter({
       name: 'learn-more',
       component: () => import('../views/LearnMoreView.vue'),
     },
-    // {
-    //   path: '/contact-us',
-    //   name: 'contact-us',
-    //   component: () => import('../views/ContactUsView.vue'), why am i getting an error here :( ?
-    // },
+    {
+      path: '/contact-us',
+      name: 'contact-us',
+      component: () => import('../views/ContactUsView.vue'),
+    },
   ],
 })
 

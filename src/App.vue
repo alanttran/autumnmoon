@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import MoonRabbit from './components/MoonRabbit.vue'
-import NavDropdownCard from './components/navBar/NavDropdownCard.vue';
+import NavDropdownCard from './components/navBar/navDropdownCard.vue';
 import { ref } from 'vue';
 
 const learnMoreDropdownOpen = ref(false);
@@ -163,7 +163,6 @@ function toggleJoinDropdown() {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
 }
 
 .logo-container {

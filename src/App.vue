@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import MoonRabbit from './components/MoonRabbit.vue'
-import NavDropdownCard from './components/navBar/navDropdownCard.vue';
+import NavDropdownCard from './components/navBar/NavDropdownCard.vue';
 import { ref } from 'vue';
 
 const learnMoreDropdownOpen = ref(false);

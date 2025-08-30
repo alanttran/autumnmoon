@@ -1,35 +1,32 @@
-<script setup lang="ts">
-// Home page wireframe component
+<script>
+import MissionStatement from '@/content/mission-statement.md'
+export default {
+  components: {
+    MissionStatement,
+  },
+};
 </script>
-
 <template>
   <div class="home">
     <header class="hero">
       <div class="hero-content">
         <h1>2025 SAN DIEGO AUTUMN MOON FESTIVAL</h1>
-          <h3>date time location</h3>
-          <div class="hero-nav">
-            <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
-            <RouterLink to="/vendors" class="nav__link">Be a Part of the Festival</RouterLink>
-          </div>
-        
+        <h3>date time location</h3>
+        <div class="hero-nav">
+          <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
+          <RouterLink to="/vendors" class="nav__link">Be a Part of the Festival</RouterLink>
+        </div>
+
       </div>
     </header>
 
     <main>
-      <section class="mission"> 
+      <section class="mission">
         <div class="mission-container">
-          <div class="mission-content">
-            <h2>MISSION STATEMENT</h2>
-            <p>Our mission is to celebrate the diversity of the Autumn Moon<br>
-               Festival by creating a space where communities can share their<br>
-               traditions while learning about other cultures. We aim to educate<br>
-               others, spread awareness, and build curiosity through our event.</p>
-            <RouterLink to="/learn-more" class="learn-more__link">Learn More About the Different Festivals ➔</RouterLink>
-          </div>
-          <img src="@/assets/amf-poster.png" alt="AMF Poster" width="536" height="auto"/>
+          <MissionStatement />
+          <img src="@/assets/amf-poster.png" alt="AMF Poster" width="536" height="auto" />
         </div>
-        
+
       </section>
 
       <section class="gallery">
@@ -40,17 +37,24 @@
           </div>
           <div class="gallery-photos">
             <div class="photo-column">
-              <img src="@/assets/home-gallery/home-1.png" alt="gallery photo 1"  style="width:362px; height:362px; object-fit:cover;"/>
-              <img src="@/assets/home-gallery/home-2.jpg" alt="gallery photo 2" style="width:362px; height:362px; object-fit:cover;">
+              <img src="@/assets/home-gallery/home-1.png" alt="gallery photo 1"
+                style="width:362px; height:362px; object-fit:cover;" />
+              <img src="@/assets/home-gallery/home-2.jpg" alt="gallery photo 2"
+                style="width:362px; height:362px; object-fit:cover;">
             </div>
             <div class="photo-column">
-              <img src="@/assets/home-gallery/home-7.png" alt="gallery photo 7" style="width:362px; height:203.62px; object-fit:cover;"/>
-              <img src="@/assets/home-gallery/home-4.jpg" alt="gallery photo 4" style="width:362px; height:203.62px; object-fit:cover;">
-              <img src="@/assets/home-gallery/home-3.png" alt="gallery photo 3" style="width:362px; height:362px; object-fit:cover;">
+              <img src="@/assets/home-gallery/home-7.png" alt="gallery photo 7"
+                style="width:362px; height:203.62px; object-fit:cover;" />
+              <img src="@/assets/home-gallery/home-4.jpg" alt="gallery photo 4"
+                style="width:362px; height:203.62px; object-fit:cover;">
+              <img src="@/assets/home-gallery/home-3.png" alt="gallery photo 3"
+                style="width:362px; height:362px; object-fit:cover;">
             </div>
             <div class="photo-column">
-              <img src="@/assets/home-gallery/home-5.jpg" alt="gallery photo 5"  style="width:362px; height:362px; object-fit:cover;"/>
-              <img src="@/assets/home-gallery/home-6.jpg" alt="gallery photo 6" style="width:362px; height:362px; object-fit:cover;">
+              <img src="@/assets/home-gallery/home-5.jpg" alt="gallery photo 5"
+                style="width:362px; height:362px; object-fit:cover;" />
+              <img src="@/assets/home-gallery/home-6.jpg" alt="gallery photo 6"
+                style="width:362px; height:362px; object-fit:cover;">
             </div>
           </div>
         </div>
@@ -79,7 +83,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4); /* dims background */
+  background: rgba(0, 0, 0, 0.4);
+  /* dims background */
   z-index: 1;
 }
 
@@ -149,36 +154,27 @@
   flex-wrap: wrap;
 }
 
-.mission h2 {
+.mission-container :deep(.mission-content) {
+  max-width: 800px;
+}
+
+.mission-container :deep(h1) {
   font-size: 3rem;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #F5E8D8;
-  margin-bottom: 16px;;
+  margin-bottom: 16px;
 }
 
-.mission p {
+.mission-container :deep(p) {
   font-size: 1.125rem;
   font-family: 'Lato', sans-serif;
   color: #F5E8D8;
   margin-bottom: 24px;
+  line-height: 1.6;
 }
 
-.learn-more__link {
-  background: none;
-  color: #F5E8D8;
-  border: none;
-  font-size: 1.25rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: underline;
-}
 
-.learn-more__link:hover {
-  color: #C11010;
-  transition: background 1s;
-}
 
 .gallery {
   padding: 112px 64px;
@@ -195,7 +191,8 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #F5E8D8;
-  margin-bottom: 16px;;
+  margin-bottom: 16px;
+  ;
 }
 
 .gallery p {
@@ -203,7 +200,8 @@
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #F5E8D8;
-  margin-bottom: 80px;;
+  margin-bottom: 80px;
+  ;
 }
 
 .gallery-photos {
@@ -216,5 +214,5 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-} 
+}
 </style>

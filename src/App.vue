@@ -39,12 +39,11 @@ function toggleJoinDropdown() {
         <nav class="nav">
           <RouterLink to="/" class="nav__link">HOME</RouterLink>
           <RouterLink to="/donate" class="nav__link">DONATIONS</RouterLink>
-          <RouterLink to="/contact-us" class="nav__link">CONTACT US</RouterLink>
           <div class="nav__dropdown">
             <button class="nav__link" @click="toggleLearnMoreDropdown">LEARN ABOUT AMF <span class="nav__dropdown-arrow" :class="{'open': learnMoreDropdownOpen}"></span></button>
             <div class="nav__dropdown-content" v-if="learnMoreDropdownOpen">
               <NavDropdownCard title="Learn About AMF" subtext="home page of the thing" to="/learn-more"/>
-              <NavDropdownCard title="Mid-Autumn Moon Festival" subtext="list of countries that celebrate this specific festival: x, y, x"  to="/learn-more"/>
+              <NavDropdownCard title="Mid-Autumn Moon Festival" subtext="list of countries that celebrate this specific festival: x, y, x"  to="/zhongqiu-jie"/>
               <NavDropdownCard title="Chuseok" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
               <NavDropdownCard title="Tsukimi" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
               <NavDropdownCard title="Tết Trung" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
@@ -164,6 +163,7 @@ function toggleJoinDropdown() {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .logo-container {
@@ -191,7 +191,8 @@ function toggleJoinDropdown() {
 
 .nav {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 32px;
   align-items: center;
   flex-wrap: wrap;
 }

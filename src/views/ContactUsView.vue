@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Learn more page wireframe component
+// contact us page wireframe component
 </script>
 
 <template>

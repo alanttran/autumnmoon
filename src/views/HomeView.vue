@@ -7,12 +7,11 @@
     <header class="hero">
       <div class="hero-content">
         <h1>2025 SAN DIEGO AUTUMN MOON FESTIVAL</h1>
-          <h3>date time location</h3>
-          <div class="hero-nav">
-            <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
-            <RouterLink to="/vendors" class="nav__link">Be a Part of the Festival</RouterLink>
-          </div>
-        
+        <h3>date time location</h3>
+        <div class="hero-nav">
+          <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
+          <RouterLink to="/vendors" class="nav__link">Be a Part of the Festival</RouterLink>
+        </div>
       </div>
     </header>
 
@@ -66,13 +65,12 @@
 
 .hero {
   position: relative;
-  background: url('@/assets/homepage-hero.png') no-repeat;
+  background: url('@/assets/heros/homepage-hero.png') no-repeat;
   background-size: cover;
   background-position: right 80%;
   width: 100%;
   height: 100%;
   padding: 120px 64px;
-
 }
 
 .hero::before {
@@ -101,8 +99,6 @@
   color: #F5E8D8;
   line-height: 1.1;
   letter-spacing: 0%;
-  word-break: break-word;
-  overflow-wrap: break-word;
 }
 
 .hero-content h3 {
@@ -138,7 +134,6 @@
 .mission {
   padding: 112px 64px;
   width: 100%;
-  max-width: 100vw;
 }
 
 .mission-container {
@@ -173,11 +168,11 @@
   font-weight: 700;
   cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .learn-more__link:hover {
   color: #C11010;
-  transition: background 1s;
 }
 
 .gallery {

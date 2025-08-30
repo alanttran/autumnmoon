@@ -45,10 +45,10 @@ const router = createRouter({
       component: () => import('../views/LearnMoreView.vue'),
     },
     {
-      path: '/contact-us',
-      name: 'contact-us',
-      component: () => import('../views/ContactUsView.vue'),
-    },
+      path: '/zhongqiu-jie',
+      name: 'zhongqiu-jie',
+      component: () => import('../views/ZhongqiuJieView.vue'),
+    }
   ],
 })
 

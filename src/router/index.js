@@ -54,6 +54,11 @@ const router = createRouter({
       name: 'chuseok',
       component: () => import('../views/ChuseokView.vue'),
     },
+    {
+      path: '/tet-trung',
+      name: 'tet-trung',
+      component: () => import('../views/TetTrungView.vue'),
+    },
   ],
 })
 

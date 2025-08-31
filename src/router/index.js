@@ -48,7 +48,12 @@ const router = createRouter({
       path: '/zhongqiu-jie',
       name: 'zhongqiu-jie',
       component: () => import('../views/ZhongqiuJieView.vue'),
-    }
+    },
+    {
+      path: '/chuseok',
+      name: 'chuseok',
+      component: () => import('../views/ChuseokView.vue'),
+    },
   ],
 })
 

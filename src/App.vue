@@ -43,7 +43,7 @@ function toggleJoinDropdown() {
             <div class="nav__dropdown-content" v-if="learnMoreDropdownOpen">
               <NavDropdownCard title="Learn About AMF" subtext="home page of the thing" to="/learn-more"/>
               <NavDropdownCard title="Mid-Autumn Moon Festival" subtext="list of countries that celebrate this specific festival: x, y, x"  to="/zhongqiu-jie"/>
-              <NavDropdownCard title="Chuseok" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
+              <NavDropdownCard title="Chuseok" subtext="list of countries that celebrate this specific festival: x, y, x" to="/chuseok"/>
               <NavDropdownCard title="Tsukimi" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
               <NavDropdownCard title="Tết Trung" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
               <NavDropdownCard title="Bon Om Touk" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>

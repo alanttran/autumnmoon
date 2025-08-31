@@ -1,11 +1,15 @@
-<script setup lang="ts">
-const props = defineProps<{ title: string; subtext: string; to: string }>()
+<script setup>
+defineProps({
+  title: String,
+  subtext: String,
+  to: String
+})
 </script>
 
 <template>
-  <RouterLink :to="props.to" class="nav__dropdown-card">
-    <p class="card-title">{{ props.title }}</p>
-    <p class="card-subtext">{{ props.subtext }}</p>
+  <RouterLink :to="to" class="nav__dropdown-card">
+    <p class="card-title">{{ title }}</p>
+    <p class="card-subtext">{{ subtext }}</p>
     <p class="card-arrow"><span id="right-arrow"></span></p>
   </RouterLink>
 </template>

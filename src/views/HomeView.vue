@@ -6,6 +6,7 @@ export default {
   },
 };
 </script>
+
 <template>
   <div class="home">
     <header class="hero">
@@ -23,7 +24,11 @@ export default {
     <main>
       <section class="mission">
         <div class="mission-container">
-          <MissionStatement />
+          <div class="mission-content">
+            <MissionStatement />
+            <RouterLink to="/learn-more" class="learn-more__link">Learn More About the Different Festivals ➔</RouterLink>
+          </div>
+          
           <img src="@/assets/amf-poster.png" alt="AMF Poster" width="536" height="auto" />
         </div>
 
@@ -69,22 +74,17 @@ export default {
 }
 
 .hero {
-  position: relative;
-  background: url('@/assets/heros/homepage-hero.png') no-repeat;
+  background: 
+    radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 75%),
+    url('@/assets/heros/homepage-hero.png') no-repeat;
   background-size: cover;
   background-position: right 80%;
   width: 100%;
-  height: 100%;
-  padding: 120px 64px;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  /* dims background */
-  z-index: 1;
+  height: 80vh;
+  padding: 120px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
@@ -94,7 +94,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -139,7 +138,6 @@ export default {
 
 .mission {
   padding: 112px 64px;
-  width: 100%;
 }
 
 .mission-container {
@@ -151,7 +149,7 @@ export default {
 }
 
 .mission-container :deep(.mission-content) {
-  max-width: 800px;
+  max-width: 536px;
 }
 
 .mission-container :deep(h1) {
@@ -159,7 +157,6 @@ export default {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #F5E8D8;
-  margin-bottom: 16px;
 }
 
 .mission-container :deep(p) {
@@ -210,7 +207,6 @@ export default {
   font-weight: 400;
   color: #F5E8D8;
   margin-bottom: 80px;
-  ;
 }
 
 .gallery-photos {

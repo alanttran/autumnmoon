@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import MoonRabbit from './components/MoonRabbit.vue'
 import NavDropdownCard from './components/navBar/NavDropdownCard.vue';
@@ -23,7 +23,6 @@ function toggleJoinDropdown() {
   learnMoreDropdownOpen.value = false;
   visitorDropdownOpen.value = false;
 }
-
 </script>
 
 <template>
@@ -146,7 +145,7 @@ function toggleJoinDropdown() {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box.
+  box-sizing: border-box;
 }
 
 .header {
@@ -159,7 +158,7 @@ function toggleJoinDropdown() {
 .header__content {
   width: 100vw;
   margin: 0 auto;
-  padding: 17px 64px;
+  padding: 17px 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -191,9 +190,9 @@ function toggleJoinDropdown() {
 .nav {
   display: flex;
   justify-content: space-between;
-  gap: 32px;
   align-items: center;
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .nav__link {

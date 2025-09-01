@@ -46,7 +46,7 @@ function toggleJoinDropdown() {
               <NavDropdownCard title="Chuseok" subtext="list of countries that celebrate this specific festival: x, y, x" to="/chuseok"/>
               <NavDropdownCard title="Tsukimi" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
               <NavDropdownCard title="Tết Trung" subtext="list of countries that celebrate this specific festival: x, y, x" to="/tet-trung"/>
-              <NavDropdownCard title="Bon Om Touk" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
+              <NavDropdownCard title="Bon Om Touk" subtext="list of countries that celebrate this specific festival: x, y, x" to="/boun-om-touk"/>
               <NavDropdownCard title="Bon That Luang" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more"/>
               <NavDropdownCard title="Festival of Lights" subtext="list of countries that celebrate this specific festival: x, y, x" to="/learn-more" />
             </div>

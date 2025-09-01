@@ -121,7 +121,7 @@ import tet9 from '@/assets/chuseok/chuseok-9.jpg'
   padding: 112px 64px;
 
   background:
-    url('/src/assets/tet-trung/tet-background.png') no-repeat bottom center,
+    url('/src/assets/tet-trung/tet-background.png') no-repeat,
     url('/src/assets/sky-background.png') repeat;
 
   background-size: contain, 75%;

@@ -119,12 +119,14 @@ import zhong9 from '@/assets/zhongqiu-jie/zhong-9.jpg'
   padding: 112px 64px;
 
   background:
-    url('/src/assets/zhongqiu-jie/zqj.png') no-repeat bottom center,
+    linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
+    url('/src/assets/zhongqiu-jie/zqj.png') no-repeat,
     url('/src/assets/sky-background.png') repeat;
 
-  background-size: contain, 75%;
-  background-position: bottom center, top left;
+  background-size: cover, contain, 75%;             
+  background-position: center, bottom center, top left; 
 }
+
 
 .content-container {
   display: flex;

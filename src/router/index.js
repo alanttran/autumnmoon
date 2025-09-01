@@ -64,6 +64,11 @@ const router = createRouter({
       name: 'boun-om-touk',
       component: () => import('../views/BounOmToukView.vue'),
     },
+    {
+      path: '/boun-that-luang',
+      name: 'boun-that-luang',
+      component: () => import('../views/BounThatLuangView.vue'),
+    },
   ],
 })
 

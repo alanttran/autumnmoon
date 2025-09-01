@@ -15,8 +15,11 @@ defineProps({
   max-width: 432px;
   color: #F5E8D8;
   position: sticky;
-  top: 6rem;
+  top: 8rem;
   align-self: flex-start; 
+  background: 
+    radial-gradient(circle at center, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0) 100%);
+  padding-bottom: 16px;
 }
 
 .content :deep(h1) {

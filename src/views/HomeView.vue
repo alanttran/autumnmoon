@@ -1,10 +1,5 @@
-<script>
+<script setup>
 import MissionStatement from '@/content/mission-statement.md'
-export default {
-  components: {
-    MissionStatement,
-  },
-};
 </script>
 
 <template>

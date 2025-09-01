@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import Overview from '@/content/zhongqiu-jie/overview.md'
 import History from '@/content/zhongqiu-jie/history.md'
 import Traditions from '@/content/zhongqiu-jie/traditions.md'
@@ -15,13 +15,6 @@ import zhong6 from '@/assets/zhongqiu-jie/zhong-6.jpg'
 import zhong7 from '@/assets/zhongqiu-jie/zhong-7.png'
 import zhong8 from '@/assets/zhongqiu-jie/zhong-8.png'
 import zhong9 from '@/assets/zhongqiu-jie/zhong-9.jpg'
-
-export default {
-  components: { Overview, History, Traditions, Food, PhotoColumn },
-  setup() {
-    return { zhong1, zhong2, zhong3, zhong4, zhong5, zhong6, zhong7, zhong8, zhong9}
-  },
-}
 
 </script>
 

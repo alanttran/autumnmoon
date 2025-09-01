@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import Overview from '@/content/tet-trung/overview.md'
 import History from '@/content/tet-trung/history.md'
 import Traditions from '@/content/tet-trung/traditions.md'
@@ -15,14 +15,6 @@ import tet6 from '@/assets/tet-trung/tet-6.jpg'
 import tet7 from '@/assets/chuseok/chuseok-7.jpg'
 import tet8 from '@/assets/chuseok/chuseok-8.jpg'
 import tet9 from '@/assets/chuseok/chuseok-9.jpg'
-
-
-export default {
-  components: { Overview, History, Traditions, Food, PhotoColumn },
-  setup() {
-    return { tet1, tet2, tet3, tet4, tet5, tet6, tet7, tet8, tet9}
-  },
-}
 
 </script>
 

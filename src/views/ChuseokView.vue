@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import Overview from '@/content/chuseok/overview.md'
 import History from '@/content/chuseok/history.md'
 import Traditions from '@/content/chuseok/traditions.md'
@@ -15,13 +15,6 @@ import chuseok6 from '@/assets/chuseok/chuseok-6.jpg'
 import chuseok7 from '@/assets/chuseok/chuseok-7.jpg'
 import chuseok8 from '@/assets/chuseok/chuseok-8.jpg'
 import chuseok9 from '@/assets/chuseok/chuseok-9.jpg'
-
-export default {
-  components: { Overview, History, Traditions, Food, PhotoColumn },
-  setup() {
-    return { chuseok1, chuseok2, chuseok3, chuseok4, chuseok5, chuseok6, chuseok7, chuseok8, chuseok9}
-  },
-}
 
 </script>
 

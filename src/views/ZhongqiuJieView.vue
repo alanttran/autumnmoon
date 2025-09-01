@@ -4,6 +4,8 @@ import History from '@/content/zhongqiu-jie/history.md'
 import Traditions from '@/content/zhongqiu-jie/traditions.md'
 import Food from '@/content/zhongqiu-jie/food.md'
 
+import OverviewContent from '../components/OverviewContent.vue'
+import LearnContent from '../components/LearnContent.vue'
 import PhotoColumn from '@/components/PhotoColumn.vue'
 
 import zhong1 from '@/assets/zhongqiu-jie/zhong-1.jpg'
@@ -29,16 +31,12 @@ import zhong9 from '@/assets/zhongqiu-jie/zhong-9.jpg'
 
         <main>
             <section class="overview">
-                <div class="overview-container">
-                    <Overview />
-                </div>
+                <OverviewContent :markdown="Overview" />
             </section>
 
             <section class="history">
                 <div class="content-container">
-                    <div class="content-text">
-                        <History />
-                    </div>
+                    <LearnContent :markdown="History" />
                     <PhotoColumn
                       :img1="zhong1" :img2="zhong2" :img3="zhong3" 
                       caption1="Book of Rites" caption2="Hou Yi" caption3="Chang’e’s Rabbit"
@@ -52,17 +50,13 @@ import zhong9 from '@/assets/zhongqiu-jie/zhong-9.jpg'
                       :img1="zhong4" :img2="zhong5" :img3="zhong6"
                       caption1="Lanterns" caption2="Taiwanese BBQ" caption3="Tai Heng Fire Dance"
                     />
-                    <div class="content-text">
-                        <Traditions />
-                    </div>
+                    <LearnContent :markdown="Traditions" />
                 </div>
             </section>
 
             <section class="food">
                 <div class="content-container">
-                    <div class="content-text">
-                        <Food />
-                    </div>
+                    <LearnContent :markdown="Food" />
                     <PhotoColumn
                       :img1="zhong7":img2="zhong8" :img3="zhong9" 
                       caption1="Mooncakes" caption2="Mooncakes with Custom Animal and Flower Patterns" caption3="Osmanthus Wine"
@@ -109,33 +103,6 @@ import zhong9 from '@/assets/zhongqiu-jie/zhong-9.jpg'
   line-height: 1.2;
 }
 
-.overview {
-  padding: 112px 87px;
-}
-
-.overview-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.overview-container :deep(h1) {
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #F5E8D8;
-}
-
-.overview-container :deep(p) {
-  font-size: 1.25rem;
-  font-family: 'Lato', sans-serif;
-  color: #F5E8D8;
-}
-
-.overview-container :deep(strong),
-.overview-container :deep(b) {
-  font-weight: bold;
-}
-
 .history {
   padding: 112px 64px;
   background: url('@/assets/sky-background.png');
@@ -163,32 +130,6 @@ import zhong9 from '@/assets/zhongqiu-jie/zhong-9.jpg'
   display: flex;
   justify-content: center;
   gap: 80px;
-}
-
-.content-text {
-  max-width: 432px;
-  color: #F5E8D8;
-  position: sticky;
-  top: 8rem;
-  align-self: flex-start; 
-}
-
-.content-container :deep(h1) {
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  
-}
-
-.content-container :deep(p),
-.content-container :deep(li) {
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-}
-
-.content-container :deep(strong),
-.content-container :deep(b) {
-  font-weight: bold;
 }
 
 </style>

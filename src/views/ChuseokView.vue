@@ -4,6 +4,8 @@ import History from '@/content/chuseok/history.md'
 import Traditions from '@/content/chuseok/traditions.md'
 import Food from '@/content/chuseok/food.md'
 
+import OverviewContent from '../components/OverviewContent.vue'
+import LearnContent from '../components/LearnContent.vue'
 import PhotoColumn from '@/components/PhotoColumn.vue'
 
 import chuseok1 from '@/assets/chuseok/chuseok-1.png'
@@ -29,16 +31,12 @@ import chuseok9 from '@/assets/chuseok/chuseok-9.jpg'
 
         <main>
             <section class="overview">
-                <div class="overview-container">
-                    <Overview />
-                </div>
+                <OverviewContent :markdown="Overview" />
             </section>
 
             <section class="history">
                 <div class="content-container">
-                    <div class="content-text">
-                        <History />
-                    </div>
+                    <LearnContent :markdown="History" />
                     <PhotoColumn
                       :img1="chuseok1" :img2="chuseok2" :img3="chuseok3" 
                       caption1="Family Gathering in the 1900’s" caption2="Chuseok in the 1900’s" caption3="Grapevine Painting - 1700’s"
@@ -52,17 +50,13 @@ import chuseok9 from '@/assets/chuseok/chuseok-9.jpg'
                       :img1="chuseok4" :img2="chuseok5" :img3="chuseok6"
                       caption1="Charye" caption2="Seongmyo" caption3="Yootnori"
                     />
-                    <div class="content-text">
-                        <Traditions />
-                    </div>
+                    <LearnContent :markdown="Traditions" />
                 </div>
             </section>
 
             <section class="food">
                 <div class="content-container">
-                    <div class="content-text">
-                        <Food />
-                    </div>
+                    <LearnContent :markdown="Food" />
                     <PhotoColumn
                       :img1="chuseok7":img2="chuseok8" :img3="chuseok9" 
                       caption1="Jeon" caption2="Songpyeon" caption3="Family Gatherings in Korea"
@@ -111,33 +105,6 @@ import chuseok9 from '@/assets/chuseok/chuseok-9.jpg'
   margin-bottom: 16px;
 }
 
-.overview {
-  padding: 112px 87px;
-}
-
-.overview-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.overview-container :deep(h1) {
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #F5E8D8;
-}
-
-.overview-container :deep(p) {
-  font-size: 1.25rem;
-  font-family: 'Lato', sans-serif;
-  color: #F5E8D8;
-}
-
-.overview-container :deep(strong),
-.overview-container :deep(b) {
-  font-weight: bold;
-}
-
 .history {
   padding: 112px 64px;
   background: url('@/assets/sky-background.png');
@@ -165,32 +132,6 @@ import chuseok9 from '@/assets/chuseok/chuseok-9.jpg'
   display: flex;
   justify-content: center;
   gap: 80px;
-}
-
-.content-text {
-  max-width: 432px;
-  color: #F5E8D8;
-  position: sticky;
-  top: 8rem;
-  align-self: flex-start; 
-}
-
-.content-container :deep(h1) {
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  
-}
-
-.content-container :deep(p),
-.content-container :deep(li) {
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-}
-
-.content-container :deep(strong),
-.content-container :deep(b) {
-  font-weight: bold;
 }
 
 </style>

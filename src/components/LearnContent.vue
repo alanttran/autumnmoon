@@ -1,14 +1,11 @@
-<!-- FAIL :( -->
-
 <script setup>
 defineProps({
-  markdown: Object, // this is the imported .md file component
+  markdown: Object,
 })
 </script>
 
 <template>
   <div class="content">
-    <!-- render the markdown -->
     <component :is="markdown" />
   </div>
 </template>

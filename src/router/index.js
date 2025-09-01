@@ -47,32 +47,37 @@ const router = createRouter({
     {
       path: '/zhongqiu-jie',
       name: 'zhongqiu-jie',
-      component: () => import('../views/ZhongqiuJieView.vue'),
+      component: () => import('../views/LearnMoreViews/ZhongqiuJieView.vue'),
     },
     {
       path: '/chuseok',
       name: 'chuseok',
-      component: () => import('../views/ChuseokView.vue'),
+      component: () => import('../views/LearnMoreViews/ChuseokView.vue'),
     },
     {
       path: '/tet-trung',
       name: 'tet-trung',
-      component: () => import('../views/TetTrungView.vue'),
+      component: () => import('../views/LearnMoreViews/TetTrungView.vue'),
     },
     {
       path: '/boun-om-touk',
       name: 'boun-om-touk',
-      component: () => import('../views/BounOmToukView.vue'),
+      component: () => import('../views/LearnMoreViews/BounOmToukView.vue'),
     },
     {
       path: '/boun-that-luang',
       name: 'boun-that-luang',
-      component: () => import('../views/BounThatLuangView.vue'),
+      component: () => import('../views/LearnMoreViews/BounThatLuangView.vue'),
     },
     {
       path: '/thadingyut',
       name: 'thadingyut',
-      component: () => import('../views/ThadingyutView.vue'),
+      component: () => import('../views/LearnMoreViews/ThadingyutView.vue'),
+    },
+    {
+      path: '/tsukimi',
+      name: 'tsukimi',
+      component: () => import('../views/LearnMoreViews/TsukimiView.vue'),
     },
   ],
 })

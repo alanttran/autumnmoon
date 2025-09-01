@@ -25,7 +25,7 @@ import boun9 from '@/assets/boun-om-touk/boun-9.jpg'
         <header class="hero">
             <div class="hero-content">
                 <h1>BOUN OM<br>TOUK</h1>
-                <img src="@/assets/boun-om-touk/boun-om-touk.png" alt="Zhongqiu Jie" width="375" height="auto"/>
+                <img src="@/assets/boun-om-touk/boun-om-touk.png" alt="Boun Om Touk" width="375" height="auto"/>
             </div>
         </header>
 

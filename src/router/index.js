@@ -69,6 +69,11 @@ const router = createRouter({
       name: 'boun-that-luang',
       component: () => import('../views/BounThatLuangView.vue'),
     },
+    {
+      path: '/thadingyut',
+      name: 'thadingyut',
+      component: () => import('../views/ThadingyutView.vue'),
+    },
   ],
 })
 

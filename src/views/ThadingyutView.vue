@@ -1,31 +1,31 @@
 <script setup>
-import Overview from '@/content/boun-that-luang/overview.md'
-import History from '@/content/boun-that-luang/history.md'
-import Traditions from '@/content/boun-that-luang/traditions.md'
-import Food from '@/content/boun-that-luang/food.md'
+import Overview from '@/content/thadingyut/overview.md'
+import History from '@/content/thadingyut/history.md'
+import Traditions from '@/content/thadingyut/traditions.md'
+import Food from '@/content/thadingyut/food.md'
 
 import OverviewContent from '../components/OverviewContent.vue'
 import LearnContent from '../components/LearnContent.vue'
 import PhotoColumn from '@/components/PhotoColumn.vue'
 
-import luang1 from '@/assets/boun-that-luang/luang-1.jpg'
-import luang2 from '@/assets/boun-that-luang/luang-2.jpg'
-import luang3 from '@/assets/boun-that-luang/luang-3.jpg'
-import luang4 from '@/assets/boun-that-luang/luang-4.jpg'
-import luang5 from '@/assets/boun-that-luang/luang-5.jpg'
-import luang6 from '@/assets/boun-that-luang/luang-6.jpg'
-import luang7 from '@/assets/boun-that-luang/luang-7.jpg'
-import luang8 from '@/assets/boun-that-luang/luang-8.jpg'
-import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
+import thadingyut1 from '@/assets/thadingyut/thadingyut-1.png'
+import thadingyut2 from '@/assets/thadingyut/thadingyut-2.jpg'
+import thadingyut3 from '@/assets/thadingyut/thadingyut-3.jpg'
+import thadingyut4 from '@/assets/thadingyut/thadingyut-4.jpg'
+import thadingyut5 from '@/assets/thadingyut/thadingyut-5.jpg'
+import thadingyut6 from '@/assets/thadingyut/thadingyut-6.png'
+import thadingyut7 from '@/assets/thadingyut/thadingyut-7.png'
+import thadingyut8 from '@/assets/thadingyut/thadingyut-8.jpg'
+import thadingyut9 from '@/assets/thadingyut/thadingyut-9.png'
 
 </script>
 
 <template>
-    <div class="boun-that-luang">
+    <div class="thadingyut">
         <header class="hero">
             <div class="hero-content">
-                <h1>BOUN THAT<br>LUANG</h1>
-                <img src="@/assets/boun-that-luang/boun-that-luang.png" alt="Boun That Luang" width="575" height="auto"/>
+                <h1>FESTIVAL OF<br>LIGHTS</h1>
+                <img src="@/assets/thadingyut/thadingyut.png" alt="Thadingyut" width="687" height="auto"/>
             </div>
         </header>
 
@@ -38,8 +38,8 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
                 <div class="content-container">
                     <LearnContent :markdown="History" />
                     <PhotoColumn
-                      :img1="luang1" :img2="luang2" :img3="luang3" 
-                      caption1="Wax castle procession" caption2="Shrine dedicated to Nang Si" caption3="Offering procession"
+                      :img1="thadingyut1" :img2="thadingyut2" :img3="thadingyut3" 
+                      caption1="Buddha’s descent from Tavatimsa" caption2="Honoring Buddha’s return by lighting candles" caption3="Courtyard glowing with candles for Thadingyut Festival"
                     />
                 </div>
             </section>
@@ -47,8 +47,8 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
             <section class="traditions">
                 <div class="content-container">
                     <PhotoColumn
-                      :img1="luang4" :img2="luang5" :img3="luang6"
-                      caption1="Laos game of tikhy being played in the 1900s" caption2="Crowds gathering to give gifts to monks" caption3="Candlelight procession"
+                      :img1="thadingyut4" :img2="thadingyut5" :img3="thadingyut6"
+                      caption1="Monks lighting candles for Thadingyut" caption2="Crowds gathering at night markets for food" caption3="Children lighting candles to celebrate"
                     />
                     <LearnContent :markdown="Traditions" />
                 </div>
@@ -58,8 +58,8 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
                 <div class="content-container">
                     <LearnContent :markdown="Food" />
                     <PhotoColumn
-                      :img1="luang7":img2="luang8" :img3="luang9" 
-                      caption1="Khao Poun" caption2="Khao Niew" caption3="Jaew Bong"
+                      :img1="thadingyut7":img2="thadingyut8" :img3="thadingyut9" 
+                      caption1="Mont lone yay baw" caption2="Grilled skewers" caption3="Mohinga"
                     />
                 </div>
             </section>
@@ -72,7 +72,7 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
 
 <style scoped>
 
-.boun-that-luang {
+.thadingyut {
   min-height: 100vh;
   background-color: #000000;
 }
@@ -81,12 +81,11 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
   background: 
     linear-gradient(
         rgba(0, 0, 0, 0) 0%, 
-        rgba(0, 0, 0, 0.25) 60%,
-        rgba(0, 0, 0, 0.70) 95%,
-        rgba(0, 0, 0, 1) 100%
+        rgba(0, 0, 0, 0.25) 90%,  
+        rgba(0, 0, 0, 0.75) 100%  
     ),
-    url('@/assets/heros/boun-that-hero.png');
-  background-size: 80%;
+    url('@/assets/heros/thadingyut-hero.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right 20%;
   width: 100%;
@@ -104,7 +103,7 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
   font-size: 8rem;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  color: #F5E8D8;
+  color: #F5F5F5;
   line-height: 1.2;
 }
 
@@ -125,12 +124,13 @@ import luang9 from '@/assets/boun-that-luang/luang-9.jpg'
 
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)),
-    url('/src/assets/boun-that-luang/boun-that-backround.png') no-repeat,
+    url('/src/assets/thadingyut/thadingyut-background.png') no-repeat,
     url('/src/assets/sky-background.png') repeat;
 
   background-size: cover, contain, 75%;             
   background-position: center, bottom center, top left; 
 }
+
 
 .content-container {
   display: flex;

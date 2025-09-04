@@ -38,23 +38,23 @@ import MissionStatement from '@/content/mission-statement.md'
           <div class="gallery-photos">
             <div class="photo-column">
               <img src="@/assets/home-gallery/home-1.png" alt="gallery photo 1"
-                style="width:362px; height:362px; object-fit:cover;" />
+                style="max-width:100%; height:362px; object-fit:cover;" />
               <img src="@/assets/home-gallery/home-2.jpg" alt="gallery photo 2"
-                style="width:362px; height:362px; object-fit:cover;">
+                style="max-width:100%; height:362px; object-fit:cover;">
             </div>
             <div class="photo-column">
               <img src="@/assets/home-gallery/home-7.png" alt="gallery photo 7"
-                style="width:362px; height:203.62px; object-fit:cover;" />
+                style="max-width:100%; height:203.62px; object-fit:cover;" />
               <img src="@/assets/home-gallery/home-4.jpg" alt="gallery photo 4"
-                style="width:362px; height:203.62px; object-fit:cover;">
+                style="max-width:100%; height:203.62px; object-fit:cover;">
               <img src="@/assets/home-gallery/home-3.png" alt="gallery photo 3"
-                style="width:362px; height:362px; object-fit:cover;">
+                style="max-width:100%; height:362px; object-fit:cover;">
             </div>
             <div class="photo-column">
               <img src="@/assets/home-gallery/home-5.jpg" alt="gallery photo 5"
-                style="width:362px; height:362px; object-fit:cover;" />
+                style="max-width:100%; height:362px; object-fit:cover;" />
               <img src="@/assets/home-gallery/home-6.jpg" alt="gallery photo 6"
-                style="width:362px; height:362px; object-fit:cover;">
+                style="max-width:100%; height:362px; object-fit:cover;">
             </div>
           </div>
         </div>

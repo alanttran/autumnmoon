@@ -17,8 +17,8 @@ defineProps({
   position: sticky;
   top: 8rem;
   align-self: flex-start; 
-  background: 
-    radial-gradient(circle at center, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0) 100%);
+  background:radial-gradient(circle at center, rgba(17,17,17,0.75) 60%, rgba(17,17,17,0) 100%);
+  border-radius: 10px;
   padding-bottom: 16px;
 }
 

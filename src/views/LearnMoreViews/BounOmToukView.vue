@@ -121,7 +121,6 @@ import boun9 from '@/assets/boun-om-touk/boun-9.jpg'
 
 .food {
   padding: 112px 64px;
-
   background:
     url('/src/assets/boun-om-touk/boun-om-touk-background.png') no-repeat,
     url('/src/assets/sky-background.png') repeat;

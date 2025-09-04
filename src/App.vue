@@ -189,7 +189,7 @@ function toggleJoinDropdown() {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   gap: 32px;

@@ -24,8 +24,8 @@ import thadingyut9 from '@/assets/thadingyut/thadingyut-9.png'
     <div class="thadingyut">
         <header class="hero">
             <div class="hero-content">
-                <h1>FESTIVAL OF<br>LIGHTS</h1>
-                <img src="@/assets/thadingyut/thadingyut.png" alt="Thadingyut" width="687" height="auto"/>
+                <h1>THADINGYUT</h1>
+                <img src="@/assets/thadingyut/thadingyut.png" alt="Thadingyut" width="542" height="auto"/>
             </div>
         </header>
 

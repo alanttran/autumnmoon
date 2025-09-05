@@ -17,9 +17,9 @@ defineProps({
   position: sticky;
   top: 8rem;
   align-self: flex-start; 
-  background:radial-gradient(circle at center, rgba(17,17,17,0.75) 60%, rgba(17,17,17,0) 100%);
   border-radius: 10px;
-  padding-bottom: 16px;
+  background-color: rgba(17, 17, 17, 0.75);
+  box-shadow: 0 0 15px 15px rgba(17, 17, 17, 0.75);
 }
 
 .content :deep(h1) {

@@ -42,6 +42,7 @@ import img3 from '@/assets/home-gallery/home-6.jpg'
 
 .learn-more {
   min-height: 100vh;
+  width: 100%;
 }
 
 .learn-about-amf{

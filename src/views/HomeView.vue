@@ -10,7 +10,7 @@ import MissionStatement from '@/content/mission-statement.md'
         <h3>date time location</h3>
         <div class="hero-nav">
           <RouterLink to="/visitor-info" class="nav__link">Visitor Info</RouterLink>
-          <RouterLink to="/vendors" class="nav__link">Be a Part of the Festival</RouterLink>
+          <RouterLink to="/vendors" class="nav__link">Vendor Info</RouterLink>
         </div>
 
       </div>
@@ -21,7 +21,7 @@ import MissionStatement from '@/content/mission-statement.md'
         <div class="mission-container">
           <div class="mission-content">
             <MissionStatement />
-            <RouterLink to="/learn-more" class="learn-more__link">Learn More About the Different Festivals ➔</RouterLink>
+            <RouterLink to="/learn-more" class="nav__link">Learn About the Different Festivals</RouterLink>
           </div>
           
           <img src="@/assets/amf-poster.png" alt="AMF Poster" width="536" height="auto" />
@@ -128,7 +128,7 @@ import MissionStatement from '@/content/mission-statement.md'
 
 .nav__link:hover {
   background: #DAA520;
-  transition: color 1s, background 1s, border 1s;
+  transition: color 1s, background 1s;
 }
 
 .mission {
@@ -158,23 +158,7 @@ import MissionStatement from '@/content/mission-statement.md'
   font-size: 1.125rem;
   font-family: 'Lato', sans-serif;
   color: #F5E8D8;
-  margin-bottom: 24px;
-}
-
-.learn-more__link {
-  background: none;
-  color: #F5E8D8;
-  border: none;
-  font-size: 1.25rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.learn-more__link:hover {
-  color: #C11010;
-  transition: background 1s;
+  margin-bottom: 32px;
 }
 
 .gallery {

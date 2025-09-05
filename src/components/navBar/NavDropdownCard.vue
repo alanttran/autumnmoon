@@ -23,8 +23,7 @@ defineProps({
   box-sizing: border-box;
   transition: border-color 0.1s;
   padding: 11.48px;
-  width: 28.854vw;
-  min-width: 28.854vw;
+  width: 23rem;
   border-radius: 7.65px;
   gap: 7.65px;
 }
@@ -42,10 +41,9 @@ defineProps({
 .card-subtext {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
-  margin-bottom: 24px;
-  height: 1.4rem;
-  max-height: 1.4rem;
+  font-size: 0.75rem;
+  height: 3.5rem;
+  color: #444444;
 }
 
 .card-arrow {

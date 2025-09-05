@@ -39,8 +39,8 @@ defineProps({
   font-weight: 400;
   font-size: 1.125rem;
   color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5px);
+  background-color: rgba(17, 17, 17, 0.75);
+  box-shadow: 0 0 15px 10px rgba(17, 17, 17, 0.75);
   border-radius: 5px;
   width: max-content;
 

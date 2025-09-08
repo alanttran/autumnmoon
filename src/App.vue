@@ -4,6 +4,15 @@ import MoonRabbit from './components/MoonRabbit.vue'
 import NavDropdownCard from './components/navBar/NavDropdownCard.vue';
 import { ref } from 'vue';
 
+import learnIcon from '@/assets/nav-icons/learn-icon.svg'
+import zhongqiuIcon from '@/assets/nav-icons/zhongqiu-icon.svg'
+import chuseokIcon from '@/assets/nav-icons/chuseok-icon.svg'
+import tsukimiIcon from '@/assets/nav-icons/tsukimi-icon.svg'
+import tetIcon from '@/assets/nav-icons/tet-icon.svg'
+import toukIcon from '@/assets/nav-icons/touk-icon.svg'
+import luangIcon from '@/assets/nav-icons/luang-icon.svg'
+import thadingyutIcon from '@/assets/nav-icons/thadingyut-icon.svg'
+
 const learnMoreDropdownOpen = ref(false);
 const visitorDropdownOpen = ref(false);
 const joinDropdownOpen = ref(false);
@@ -41,30 +50,30 @@ function toggleJoinDropdown() {
           <div class="nav__dropdown">
             <button class="nav__link" @click="toggleLearnMoreDropdown">LEARN ABOUT AMF <span class="nav__dropdown-arrow" :class="{'open': learnMoreDropdownOpen}"></span></button>
             <div class="nav__dropdown-content" v-if="learnMoreDropdownOpen">
-              <NavDropdownCard title="Learn About AMF" subtext="Explore AMF across culture and see history in San Diego." to="/learn-more"/>
-              <NavDropdownCard title="Mid-Autumn Moon Festival" subtext="The Mid-Autumn Festival (中秋节, Zhōngqiū Jié) is celebrated on the 15th day of the eighth lunar month. Families gather to enjoy the harvest, light lanterns, and admire the full moon."  to="/zhongqiu-jie"/>
-              <NavDropdownCard title="Chuseok" subtext="The Korean festival of Chuseok, “autumn eve”, is celebrated during the eighth month of the lunar calendar. It is a time for families to gather and give thanks to their ancestors." to="/chuseok"/>
-              <NavDropdownCard title="Tsukimi" subtext="Tsukimi, a Japanese festival over 1000 years old, is celebrated in the eighth lunar month. Families honor the moon and harvest with tea ceremonies, food, and moon-viewing events." to="/tsukimi"/>
-              <NavDropdownCard title="Tết Trung Thu" subtext="In Vietnam, the Mid-Autumn Festival, or Tết Trung Thu, is celebrated on the 15th day of the eighth lunar month. It is a time for family reunions, with a special focus on children across the nation." to="/tet-trung"/>
-              <NavDropdownCard title="Bon Om Touk" subtext="Bon Om Touk, or the Water and Moon Festival, is Cambodia’s largest holiday. Celebrated over three days from late October to early November, it marks the end of the monsoon season." to="/boun-om-touk"/>
-              <NavDropdownCard title="Bon That Luang" subtext="The That Luang Festival in Vientiane, Laos, is held at the Pha That Luang temple. Lasting three to seven days during the twelfth lunar month, it is the nation’s most important religious celebration." to="/boun-that-luang"/>
-              <NavDropdownCard title="Thadingyut" subtext="Thadingyut, the Festival of Lights in Myanmar, is a three-day celebration marking the end of Buddhist Lent. Homes and streets glow with lights and candles to welcome Buddha back to Earth." to="/thadingyut" />
+              <NavDropdownCard :img="learnIcon" title="History of AMF" subtext="Explore AMF across culture and see history in San Diego." to="/learn-more"/>
+              <NavDropdownCard :img="zhongqiuIcon" title="Mid-Autumn Moon Festival" subtext="The Mid-Autumn Festival (中秋节, Zhōngqiū Jié) is celebrated on the 15th day of the eighth lunar month. Families gather to enjoy the harvest, light lanterns, and admire the full moon."  to="/zhongqiu-jie"/>
+              <NavDropdownCard :img="chuseokIcon" title="Chuseok" subtext="The Korean festival of Chuseok, “autumn eve”, is celebrated during the eighth month of the lunar calendar. It is a time for families to gather and give thanks to their ancestors." to="/chuseok"/>
+              <NavDropdownCard :img="tsukimiIcon" title="Tsukimi" subtext="Tsukimi, a Japanese festival over 1000 years old, is celebrated in the eighth lunar month. Families honor the moon and harvest with tea ceremonies, food, and moon-viewing events." to="/tsukimi"/>
+              <NavDropdownCard :img="tetIcon" title="Tết Trung Thu" subtext="In Vietnam, the Mid-Autumn Festival, or Tết Trung Thu, is celebrated on the 15th day of the eighth lunar month. It is a time for family reunions, with a special focus on children across the nation." to="/tet-trung"/>
+              <NavDropdownCard :img="toukIcon" title="Bon Om Touk" subtext="Bon Om Touk, or the Water and Moon Festival, is Cambodia’s largest holiday. Celebrated over three days from late October to early November, it marks the end of the monsoon season." to="/boun-om-touk"/>
+              <NavDropdownCard :img="luangIcon" title="Bon That Luang" subtext="The That Luang Festival in Vientiane, Laos, is held at the Pha That Luang temple. Lasting three to seven days during the twelfth lunar month, it is the nation’s most important religious celebration." to="/boun-that-luang"/>
+              <NavDropdownCard :img="thadingyutIcon" title="Thadingyut" subtext="Thadingyut, the Festival of Lights in Myanmar, is a three-day celebration marking the end of Buddhist Lent. Homes and streets glow with lights and candles to welcome Buddha back to Earth." to="/thadingyut" />
             </div>
           </div>
           <div class="nav__dropdown">
             <button class="nav__link" @click="toggleVisitorDropdown">VISITOR INFO <span class="nav__dropdown-arrow" :class="{'open': visitorDropdownOpen}"></span></button>
             <div class="nav__dropdown-content" v-if="visitorDropdownOpen">
-              <NavDropdownCard title="Visitor Info" subtext="lil copy" to="/visitor-info" />
-              <NavDropdownCard title="Schedule" subtext="lil copy" to="/schedule" />
-              <NavDropdownCard title="Vendors/Non-Profits" subtext="lil copy" to="/vendors" />
+              <NavDropdownCard title="Visitor Info" subtext="Lorem ipsum, dolor sit amet consectetur adipisicing elit." to="/visitor-info" />
+              <NavDropdownCard title="Schedule" subtext="Lorem ipsum, dolor sit amet consectetur adipisicing elit." to="/schedule" />
+              <NavDropdownCard title="Vendors/Non-Profits" subtext="Lorem ipsum, dolor sit amet consectetur adipisicing elit." to="/vendors" />
             </div>
           </div>
           <div class="nav__dropdown">
             <button class="nav__link" @click="toggleJoinDropdown">JOIN THE FESTIVAL <span class="nav__dropdown-arrow" :class="{'open': joinDropdownOpen}"></span></button>
             <div class="nav__dropdown-content" v-if="joinDropdownOpen">
-              <NavDropdownCard title="Volunteers" subtext="lil copy" to="/volunteers" />
-              <NavDropdownCard title="Sponsors" subtext="lil copy" to="/sponsors" />
-              <NavDropdownCard title="Vendors/Non-Profits" subtext="lil copy" to="/vendors" />
+              <NavDropdownCard title="Volunteers" subtext="Lorem ipsum, dolor sit amet consectetur adipisicing elit." to="/volunteers" />
+              <NavDropdownCard title="Sponsors" subtext="Lorem ipsum, dolor sit amet consectetur adipisicing elit." to="/sponsors" />
+              <NavDropdownCard title="Vendors/Non-Profits" subtext="Lorem ipsum, dolor sit amet consectetur adipisicing elit." to="/vendors" />
             </div>
           </div>
           

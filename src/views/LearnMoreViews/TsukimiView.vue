@@ -79,12 +79,7 @@ import tsukimi9 from '@/assets/tsukimi/tsukimi-9.png'
 
 .hero {
   background: 
-    linear-gradient(
-        rgba(0, 0, 0, 0) 0%, 
-        rgba(0, 0, 0, 0.25) 60%,  
-        rgba(0, 0, 0, 0.85) 100%  
-    ),
-    url('@/assets/heros/chuseok-hero.png');
+    url('@/assets/heros/tsukimi-hero.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

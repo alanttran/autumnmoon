@@ -163,12 +163,10 @@ import MissionStatement from '@/content/mission-statement.md'
 
 .gallery {
   padding: 112px 64px;
-  gap: 80px;
 }
 
 .gallery-title {
   text-align: center;
-  gap: 16px;
 }
 
 .gallery h2 {
@@ -177,7 +175,6 @@ import MissionStatement from '@/content/mission-statement.md'
   font-weight: 700;
   color: #F5E8D8;
   margin-bottom: 16px;
-  ;
 }
 
 .gallery p {

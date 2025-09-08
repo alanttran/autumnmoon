@@ -12,11 +12,11 @@ import img3 from '@/assets/home-gallery/home-6.jpg'
 
 <template>
     <div class="learn-more">
-        <div class="learn-about-amf">
+        <!-- <div class="learn-about-amf">
             <h1>LEARN ABOUT AMF</h1>
             <p>Explore our interactive map to see where different Autumn Moon Festival traditions originate. From history to food, learn more about how different communities honor the moon and harvest.</p>
             <div class="map"></div>
-        </div>
+        </div> -->
         
         <div class="learn-more-content">
             <div class="history">

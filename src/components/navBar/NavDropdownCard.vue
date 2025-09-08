@@ -1,5 +1,6 @@
 <script setup>
 defineProps({
+  img: String,
   title: String,
   subtext: String,
   to: String
@@ -8,15 +9,21 @@ defineProps({
 
 <template>
   <RouterLink :to="to" class="nav__dropdown-card">
-    <p class="card-title">{{ title }}</p>
-    <p class="card-subtext">{{ subtext }}</p>
-    <p class="card-arrow"><span id="right-arrow"></span></p>
+    <img :src="img" alt="icon"
+    style="width:38.27242660522461px; height:38.27242660522461px; object-fit:cover; border-radius: 22.96px;" />
+
+    <div class="card-content">
+      <p class="card-title">{{ title }}</p>
+      <p class="card-subtext">{{ subtext }}</p>
+      <p class="card-arrow"><span id="right-arrow"></span></p>
+    </div>
   </RouterLink>
 </template>
 
 <style scoped>
 
 .nav__dropdown-card {
+  display: flex;
   color: #111111;
   background: #FFFFFF;
   border: 5px solid transparent;
@@ -30,6 +37,11 @@ defineProps({
 
 .nav__dropdown-card:hover {
   border-color: #D0171F;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title{
@@ -64,6 +76,8 @@ defineProps({
   mask-size: contain;
 
   background: #111111;
+
+  align-items: flex-end;
 }
 
 .nav__dropdown-card:hover #right-arrow {
